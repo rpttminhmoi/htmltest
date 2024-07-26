@@ -1,0 +1,13 @@
+[1mdiff --git a/myproject.html b/myproject.html[m
+[1mindex 0d81a77..fa3c820 100644[m
+[1m--- a/myproject.html[m
+[1m+++ b/myproject.html[m
+[36m@@ -3,7 +3,7 @@[m
+ <head>[m
+     <meta charset="UTF-8">[m
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[31m-    <title>Đại học Công nghệ - Tufffffffyển sinh</title>[m
+[32m+[m[32m    <title>Đại học Công nghệ - Tuyển sinh</title>[m
+     <link rel="stylesheet" href="style.css">[m
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">[m
+ </head>[m
