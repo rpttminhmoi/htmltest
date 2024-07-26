@@ -35,7 +35,7 @@ header .language-search{
     z-index:2;
 }
 header img #logo{
-    float:left;
+    justify-content:  left;
     margin-left:200px;
     margin-top: 75px !important;
     height: 75px;
@@ -43,14 +43,10 @@ header img #logo{
 }
  header nav .van-link ul{
     margin-right:30px;
-    float:right;
+    justify-content:right;
     z-index:1;
 }
 
-nav {
-    float: right;
-    margin-right: 20px;
-}
 nav ul {
     list-style: none;
 

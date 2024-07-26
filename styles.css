@@ -44,8 +44,8 @@ body, html {
     top: 50px;
     height: 50px;
     z-index: 1;
-    justify-content: space-between; /* Distributing space between logo and items */
-    padding: 0 10px; /* Adding some padding to the sides */
+    /*justify-content: space-between; /* Distributing space between logo and items */
+    padding: 0 100px; /* Adding some padding to the sides */
 }
 
 .logo img {
