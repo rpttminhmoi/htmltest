@@ -1,99 +1,58 @@
-/* Temporary CSS for demonstration purposes */
-* {
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    overflow: hidden;
-}
-
-header .logo {
-    float: left;
-}
-
-header .logo img {
-    height: 50px;
-}
-
-nav {
-    float: right;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 15px;
-    display: inline-block;
-}
-
-.banner img {
+.navbar {
     width: 100%;
-    height: auto;
+    position: fixed;
+    left: 0;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    display: block;
+}
+
+.navbar1 {
+    top: 0;
+    height: 50px;
+    z-index: 2;
+    justify-content: center; /* Centering the items horizontally */
+}
+
+.navbar2 {
+    top: 50px;
+    height: 50px;
+    z-index: 1;
+    justify-content: space-between; /* Distributing space between logo and items */
+    padding: 0 10px; /* Adding some padding to the sides */
+}
+
+.logo img {
+    height: 40px; /* Adjust the height of the logo */
 }
 
 .content {
-    padding: 2rem 0;
-    background: #f4f4f4;
-}
-
-.content h2 {
-    margin-bottom: 1rem;
-}
-
-.info {
-    display: flex;
-    justify-content: space-between;
-}
-
-.info-item {
-    background: #fff;
-    padding: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    text-align: center;
-}
-
-.info-item i {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 0.5rem;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-}
-
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+    margin-top: 100px;
+    padding: 20px;
 }
