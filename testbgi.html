@@ -1,33 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stacked Navbars with Logo Example</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+<html>
 <body>
-    <nav class="navbar navbar1">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <nav class="navbar navbar2">
-        <div class="logo">
-            <img src="logouet.png" alt="Logo">
-        </div>
-        <ul>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Log Out</a></li>
-        </ul>
-    </nav>
-    <div class="content">
-        <h1>Welcome to the Website</h1>
-        <p>This is some content below the navbars.</p>
-    </div>
+<h1>JavScript Bigint</h1>
+<p>A BigInt can not have decimals.</p>
+
+<p id="demo"></p>
+
+<p>You cannot perform math between a BigInt type and a Number type.</p>
+
+<script>
+let x = BigInt("123456789012345678901234567890");
+let y = 100000;
+let z=x+y;
+document.getElementById("demo").innerHTML = z; 
+</script>
+
 </body>
 </html>

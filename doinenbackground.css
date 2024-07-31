@@ -1,0 +1,41 @@
+body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+  }
+  
+  .background-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200%; /* Double the width to accommodate two backgrounds side by side */
+      height: 100%;
+      display: flex;
+      transition: transform 1s ease-in-out; /* Smooth slide transition */
+  }
+  
+  .background {
+      width: 50%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+  }
+  
+  .background1 {
+      background-image: url('banner.jpg');
+  }
+  
+  .background2 {
+      background-image: url('banner1.jpg');
+  }
+  
+  .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      margin-top: 20%;
+  }
+  
