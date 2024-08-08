@@ -2,17 +2,19 @@
 <html>
 <body>
 
-<h2>JavaScript Statements</h2>
+<h2>The XMLHttpRequest Object</h2>
+<p>The getAllResponseHeaders() function returns all the header information of a resource, like length, server-type, content-type, last-modified, etc:</p>
 
-<p>
-The best place to break a code line is after an operator or a comma.
-</p>
-
-<p id="demo"></p>
+<pre id="demo"></pre>
 
 <script>
-document.getElementById("demo").innerHTML =
-"Hello \n Dolly!";
+const xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+  document.getElementById("demo").innerHTML =
+  this.getAllResponseHeaders();
+}
+xhttp.open("GET", "ajax_info.txt");
+xhttp.send();
 </script>
 
 </body>
