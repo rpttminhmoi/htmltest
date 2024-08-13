@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
 <body>
-
-<h2>The XMLHttpRequest Object</h2>
-<p>The getAllResponseHeaders() function returns all the header information of a resource, like length, server-type, content-type, last-modified, etc:</p>
-
-<pre id="demo"></pre>
+<div id="myPlot" style="width:100%;max-width:700px"></div>
 
 <script>
-const xhttp = new XMLHttpRequest();
-xhttp.onload = function() {
-  document.getElementById("demo").innerHTML =
-  this.getAllResponseHeaders();
+let exp = "Math.cos(x)";
+
+// Generate values
+const xValues = [];
+const yValues = [];
+for (let x = 0; x <= 100; x += 0.01) {
+  xValues.push(x);
+  yValues.push(eval(exp));
 }
-xhttp.open("GET", "ajax_info.txt");
-xhttp.send();
+
+// Display using Plotly
+const data = [{x:xValues, y:yValues, mode:"markers"}];
+const layout = {title: "y = " + exp};
+Plotly.newPlot("myPlot", data, layout);
 </script>
 
-</body>
-</html>
