@@ -1,4 +1,4 @@
-git <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,18 +6,21 @@ git <!DOCTYPE html>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Dev Test 6.12</title>
       <link rel="stylesheet" href="stylesheet.css">
+      <script src="script.js"></script>
 </head>
+<!-- day la thay doi-->
 
 <body>
       <div class="container">
-            <div class="menu">
-                  <div class="menu-item">Pencils</div>
-                  <div class="menu-item">Markers</div>
-                  <div class="menu-item">Drawing Colors</div>
-                  <div class="menu-item">Notebooks</div>
-            </div>
-
-            <div class="content">
+            <nav>
+                  <ul class="menu" style="list-style-type: none;">
+                        <li><a href="#" class="menu-item" data-section="pencils">Pencils</a></li>
+                        <li><a href="#" class="menu-item" data-section="markers">Markers</a></li>
+                        <li><a href="#" class="menu-item" data-section="drawingcolors">Drawing Colors</a></li>
+                        <li><a href="#" class="menu-item" data-section="notebooks">Notebooks</a></li>
+                  </ul>
+            </nav>
+            <div id="pencils" class="content">
                   <div class="description">
                         <p>Graphite Artist Quality Fine Art Drawing and Sketching Pencils Replaceable Nib Pencils. </p>
                         <ul style="list-style-type: disc;">
@@ -28,7 +31,6 @@ git <!DOCTYPE html>
                         </ul>
                         <button>SHOP ALL</button>
                   </div>
-
                   <div class="offer">
                         <div class="offer-text">
                               <span class="discount">25% off</span>
@@ -59,7 +61,167 @@ git <!DOCTYPE html>
                         </div>
                   </div>
             </div>
+            <div id="markers" class="content">
+                  <div class="description">
+                        <p>High-Quality Fine Art and Professional Markers with Replaceable Tips for Consistent
+                              Performance.</p>
+                        <ul style="list-style-type: disc;">
+                              <li>PERMANENT MARKERS</li>
+                              <li>ARTIST'S CHOICE</li>
+                              <li>DRY ERASE MARKERS</li>
+                              <li>CALLIGRAPHY MARKERS</li>
+                        </ul>
+                        <button>SHOP ALL</button>
+                  </div>
+
+                  <div class="offer">
+                        <div class="offer-text">
+                              <span class="discount">20% off</span>
+                              <span class="offer-applicable">Offer Applicable on All Our Markers</span>
+                        </div>
+                        <div class="products">
+                              <div class="product">
+                                    <img src="perm_marker.jpg" alt="Permanent Marker">
+                                    <div class="product-info">
+                                          <h3>Permanent Marker</h3>
+                                          <p class="price">$9.00 <span class="old-price">$12.00</span></p>
+                                    </div>
+                              </div>
+                              <div class="product">
+                                    <img src="dry_erase_marker.jpg" alt="Dry Erase Marker">
+                                    <div class="product-info">
+                                          <h3>Dry Erase Marker</h3>
+                                          <p class="price">$5.00 <span class="old-price">$7.00</span></p>
+                                    </div>
+                              </div>
+                              <div class="product">
+                                    <img src="calligraphy_marker.jpg" alt="Calligraphy Marker">
+                                    <div class="product-info">
+                                          <h3>Calligraphy Marker</h3>
+                                          <p class="price">$15.00 <span class="old-price">$20.00</span></p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <div id="drawingcolors" class="content">
+                  <div class="description">
+                        <p>Premium Drawing Colors for Artistic Creations with Rich, Vibrant Pigments and Smooth
+                              Application.</p>
+                        <ul style="list-style-type: disc;">
+                              <li>COLORED PENCILS</li>
+                              <li>PASTELS</li>
+                              <li>CHARCOAL</li>
+                              <li>ARTIST'S MARKERS</li>
+                        </ul>
+                        <button>SHOP ALL</button>
+                  </div>
+
+                  <div class="offer">
+                        <div class="offer-text">
+                              <span class="discount">30% off</span>
+                              <span class="offer-applicable">Offer Applicable on All Our Drawing Colors</span>
+                        </div>
+                        <div class="products">
+                              <div class="product">
+                                    <img src="colored_pencil.jpg" alt="Colored Pencils">
+                                    <div class="product-info">
+                                          <h3>Colored Pencils Set</h3>
+                                          <p class="price">$25.00 <span class="old-price">$35.00</span></p>
+                                    </div>
+                              </div>
+                              <div class="product">
+                                    <img src="pastels.jpg" alt="Pastels">
+                                    <div class="product-info">
+                                          <h3>Pastel Set</h3>
+                                          <p class="price">$18.00 <span class="old-price">$24.00</span></p>
+                                    </div>
+                              </div>
+                              <div class="product">
+                                    <img src="charcoal.jpg" alt="Charcoal">
+                                    <div class="product-info">
+                                          <h3>Charcoal Drawing Set</h3>
+                                          <p class="price">$22.00 <span class="old-price">$30.00</span></p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <div id="notebooks" class="content">
+                  <div class="description">
+                        <p>High-Quality Notebooks Perfect for Note-Taking, Journaling, and Creative Writing. Durable and
+                              Stylish.</p>
+                        <ul style="list-style-type: disc;">
+                              <li>NOTEBOOKS</li>
+                              <li>JOURNALS</li>
+                              <li>SKETCHBOOKS</li>
+                              <li>PLANNERS</li>
+                        </ul>
+                        <button>SHOP ALL</button>
+                  </div>
+
+                  <div class="offer">
+                        <div class="offer-text">
+                              <span class="discount">20% off</span>
+                              <span class="offer-applicable">Offer Applicable on All Our Notebooks</span>
+                        </div>
+                        <div class="products">
+                              <div class="product">
+                                    <img src="notebook1.jpg" alt="Classic Notebook">
+                                    <div class="product-info">
+                                          <h3>Classic Notebook</h3>
+                                          <p class="price">$15.00 <span class="old-price">$20.00</span></p>
+                                    </div>
+                              </div>
+                              <div class="product">
+                                    <img src="journal.jpg" alt="Leather Journal">
+                                    <div class="product-info">
+                                          <h3>Leather Journal</h3>
+                                          <p class="price">$25.00 <span class="old-price">$30.00</span></p>
+                                    </div>
+                              </div>
+                              <div class="product">
+                                    <img src="sketchbook.jpg" alt="Sketchbook">
+                                    <div class="product-info">
+                                          <h3>Artist Sketchbook</h3>
+                                          <p class="price">$18.00 <span class="old-price">$22.00</span></p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
       </div>
+      <div class="gallery">
+            <h1 class="title">PACKER PEN GALLERY</h1>
+            <div class="gallerypic">
+                  <div class="column">
+                        <div class="pic">
+                              <img src="pic1.jpg" alt="pic1" style="height: 185px; width: 291px; margin-top:30px" >
+                        </div>
+                        <div class="pic">
+                              <img src="pic2.jpg" alt="pic2" style="height: 309px; width: 291px;">
+                        </div>
+                  </div>
+                  <div class="column">
+                        <div class="pic">
+                              <img src="pic3.jpg" alt="pic3" style="height: 284px; width: 582px;">
+                        </div>
+                        <div class="pic">
+                              <img src="pic4.jpg" alt="pic4" style="height: 284px; width: 582px;">
+                        </div>
+                  </div>
+                  <div class="column">
+                        <div class="pic">
+                              <img src="pic5.jpg" alt="pic5" style="height: 119px; width: 291px; margin-top:30px">
+                        </div>
+                        <div class="pic">
+                              <img src="pic6.jpg" alt="pic6" style="height: 230px; width: 291px;">
+                        </div>
+                        <div class="pic">
+                              <img src="pic7.jpg" alt="pic7" style="height: 138px; width: 291px;">
+                        </div>
+                  </div>
+            </div>
 </body>
 
 </html>
