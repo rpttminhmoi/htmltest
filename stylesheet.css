@@ -1,11 +1,17 @@
 body {
+    max-width: 1440px;
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     margin-top: 60px;
     padding: 0;
 }
-*{box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 .container {
+    /*
+    display:none;
+    */
     width: 80%;
     margin: 0 auto;
 }
@@ -16,22 +22,25 @@ body {
     justify-content: space-around;
     padding: 0px;
     padding-top: 20px;
-    background-color: #F8F9FA;
-   /* border-top-right-radius: 10px;
+    background-color: #f8f9fa;
+    /* border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     */
-    margin-bottom:-6px;
+    margin-bottom: -6px;
 }
 
 .menu-item {
-    color:black;
-    background-color: #F8F9FA;
+    color: black;
+    background-color: #f8f9fa;
     text-align: center;
-    padding: 27px 96px 29px 86px ;
+    font-weight: bold;
+    padding:25px 94px 30px 76px;
     cursor: pointer;
     width: 25%;
     text-decoration: none;
-    transition: background-color 0.5s, color 0.5s;
+    transition:
+        background-color 0.5s,
+        color 0.5s;
 }
 
 .menu-item.active {
@@ -45,16 +54,16 @@ body {
     justify-content: space-between;
     margin-top: 20px;
     background-color: #c0c0c0;
-    margin-left: 0px;
-    
+    margin-left: -1px;
+    margin-right:4px;
 }
 
-.content.active{
+.content.active {
     display: flex;
 }
 
 .description {
-    width: 30%;
+    width: 35%;
     background-color: #fff;
     padding: 20px;
     border-radius: 0px 0 0 10px;
@@ -72,7 +81,7 @@ body {
 }
 
 .description ul li {
-    font-size:18px;
+    font-size: 18px;
     margin: 10px 0 10px 30px;
     font-weight: bold;
 }
@@ -105,21 +114,21 @@ body {
 }
 
 .discount {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     color: #ffcc00;
     background-color: #ffffff;
     text-align: center;
-    padding: 10px;
+    padding: 10px 30px; 
     border-radius: 5px 0 0 5px;
     border: 16px;
 }
 
 .offer-applicable {
-    font-size: 16px;
+    font-size: 25px;
     text-align: center;
     padding: 10px;
-    margin-left: 100px;
+    margin-left: 40px;
 }
 
 .products {
@@ -159,25 +168,33 @@ body {
     text-decoration: line-through;
     color: #888;
 }
-.title{
-    text-align: center;
-    margin-bottom: 2rem;
+
+.gallery{
+/*
+    display:none;
+*/
 }
-.gallerypic{
+
+.title {
+    margin-top:80px;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: -30px;
+}
+.gallerypic {
     margin: 80px auto;
     max-width: 1224px;
     width: 80%;
-    display:flex;
-    gap:20px;
-    
+    display: flex;
+    gap: 20px;
 }
-.column{
-    display:flex;
+.column {
+    display: flex;
     flex-direction: column;
-    gap:20px;
+    gap: 20px;
 }
-.pic img{
-   object-fit: cover;
-   width: 100%;
-   border-radius:8px;
+.pic img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px;
 }
